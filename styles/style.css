@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header .header__menu {
+        justify-content: center;
+    }
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5% 10%;
+    }
+    .presentacion__contenido {
+        width:auto;
+    }
+    .presentacion__enlaces__link {
+        width: 100%;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    }
+
+:root{
+    --color-primario: #282846;
+    --color-secundario: #9bfeab;
+    --color-terciario: #fcfafa;
+    --color-footer: #34684e;
+
+    --fuente-kronaOne: "Krona One", sans-serif;
+}
+
+body{
+    background-color: #1e1e2f;
+    color: var(--color-terciario);
+    font-size: 1rem;
+    }
+
+/*Class para el header*/
+
+.header{
+    padding: 0% 14%;
+    }
+
+.header__menu{
+    display: flex;
+    gap: 0.625rem;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.header__menu__link{
+    font-family: krona one;
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+    display: flex;
+    margin: 1.25rem;
+    text-decoration: none;
+}
+
+.header__menu__link:hover{
+    background-color: var(--color-terciario);
+    border-radius: 16%;
+    border: var(--color-secundario);
+    }
+
+/*Class main*/
+
+.titulo-destaque{
+    color: #f39c12;
+}
+
+.presentacion{
+    padding: 2% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around  
+    gap: 2rem;
+}
+
+.presentacion__contenido{
+    max-width: 38.4375rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 2.25rem;
+    font-family: krona One,  sans-serif;
+}
+
+.presentacion__contenido__texto{
+    font-family: Krona One, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-terciario);
+}
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.presentacion__enlaces__subtitulo{
+    color: var(--color-secundario);
+    font-family: krona One;
+    font-size: 1.5rem;
+    font-weight: 400;
+ }
+
+.presentacion__enlaces__link{
+    background-color: #282846;
+    color: var(--color-terciario);
+    font-family: krona One, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 100%;
+    max-width: 21.875rem; /* Ancho fijo */
+    height: 3.125rem; /* Alto fijo */
+    border: 0.125rem solid var(--color-secundario); /* Borde de color */
+    border-radius: 16%;
+    display: inline-block; /* Asegura que el ancla respete las dimensiones */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 3.125rem; /* Centra el texto verticalmente */
+    text-decoration: none;      
+}
+
+.presentacion__enlaces__link:hover{
+    background-color: #44475a;
+    text-decoration: underline; color: #50fa7b;
+    transform: scale(1.1);
+    text-shadow: .125rem .125rem .3125rem rgba(80, 250, 123, 0.5);
+}
+
+.presentacion__enlaces__link__icono{
+    width: 2.25rem; /* Ajusta el tamaño de la imagen */
+    height: 2.25rem; /* Ajusta el tamaño de la imagen */
+    transform: translateY(.3125rem); 
+    }
+
+.footer{
+    margin: 8% .625rem;
+    padding: .75rem;
+    background-color: var(--color-secundario);
+    color: var(--color-footer);
+    text-align: center;
+    font-family: krona one;
+    font-size: 1.25rem;
+    font-weight: 400;
+    }
+
+.imagen-grande{
+    width: 20rem;
+    height: auto;
+    padding: 5%;
+ }
+
